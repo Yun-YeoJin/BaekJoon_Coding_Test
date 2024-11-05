@@ -2,7 +2,6 @@ from itertools import permutations
 
 N = int(input()) #배열의 길이
 numsList = list(map(int, input().split())) #정수들
-nums = []
 
 maxSum = 0
 
@@ -13,4 +12,3 @@ for a in permutations(numsList, N):
     maxSum = max(maxSum, sum)
     
 print(maxSum)
-    
